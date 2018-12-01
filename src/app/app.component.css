@@ -1,3 +1,7 @@
+form {
+  margin-bottom: 16px;
+}
+
 form > * {
   margin-right: 4px;
 }

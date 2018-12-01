@@ -7,18 +7,18 @@ import { FormGroup, FormControl } from '@angular/forms';
 class Person {
   constructor(public firstName: string, public lastName: string) {}
 }
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  people: Person[] = [];
   form = new FormGroup({
     firstName: new FormControl(''),
     lastName: new FormControl('')
   });
-
-  people: Person[] = [];
 
   addPerson() {
     this.people = [
